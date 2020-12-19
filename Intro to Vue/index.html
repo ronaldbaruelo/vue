@@ -5,11 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Product App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="app">
-    <h1>{{product}}</h1>
-  </div>
+    <div class="product">
+  
+      <div class="product-image">
+        <img v-bind:src="image" />
+      </div>
+  
+      <div class="product-info">
+        <h1>{{ product }}</h1>
+        <a :href="link" target="_blank">More products like this</a>
+      </div>
+      
+    </div>
+      
+  </div> 
+ 
 
   <!-- development version, includes helpful console warnings -->
 
